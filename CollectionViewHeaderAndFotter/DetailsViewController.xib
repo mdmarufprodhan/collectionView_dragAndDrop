@@ -19,12 +19,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3hR-X8-8hV">
-                    <rect key="frame" x="0.0" y="72" width="393" height="60"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="109"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2M7-TB-bwe">
-                            <rect key="frame" x="-3" y="16" width="98" height="20"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2M7-TB-bwe">
+                            <rect key="frame" x="0.0" y="70" width="89" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="FUg-d1-ffO"/>
+                            </constraints>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" image="chevron.backward.square" catalog="system" title="Album">
+                            <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title="Album" titleAlignment="center">
                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </buttonConfiguration>
                             <connections>
@@ -34,26 +37,25 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="2M7-TB-bwe" secondAttribute="bottom" constant="24" id="29u-tM-ZgU"/>
-                        <constraint firstAttribute="height" constant="60" id="Hi6-b0-O6Y"/>
-                        <constraint firstItem="2M7-TB-bwe" firstAttribute="leading" secondItem="3hR-X8-8hV" secondAttribute="leading" constant="-3" id="U7E-Sm-NKg"/>
-                        <constraint firstItem="2M7-TB-bwe" firstAttribute="top" secondItem="3hR-X8-8hV" secondAttribute="top" constant="16" id="eFS-de-ERb"/>
+                        <constraint firstItem="2M7-TB-bwe" firstAttribute="top" secondItem="3hR-X8-8hV" secondAttribute="top" constant="70" id="Epr-I7-WlJ"/>
+                        <constraint firstAttribute="height" constant="109" id="Hi6-b0-O6Y"/>
+                        <constraint firstItem="2M7-TB-bwe" firstAttribute="leading" secondItem="3hR-X8-8hV" secondAttribute="leading" id="Xva-1W-gsq"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="3hR-X8-8hV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="13" id="ZM9-E2-4lr"/>
+                <constraint firstItem="3hR-X8-8hV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-59" id="ZM9-E2-4lr"/>
                 <constraint firstItem="3hR-X8-8hV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="p6m-7g-abZ"/>
-                <constraint firstItem="3hR-X8-8hV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="13" id="wDz-l1-ANl"/>
+                <constraint firstItem="3hR-X8-8hV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-59" id="wDz-l1-ANl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3hR-X8-8hV" secondAttribute="trailing" id="yG8-Wb-qal"/>
             </constraints>
             <point key="canvasLocation" x="119.84732824427481" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
-        <image name="chevron.backward.square" catalog="system" width="128" height="114"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
