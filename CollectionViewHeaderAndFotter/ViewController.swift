@@ -56,6 +56,7 @@ class ViewController: UIViewController {
         guard let collectionView = collectionView else {
             return
         }
+        
         switch gesture.state {
         case .began:
             guard let  targetIndexPath = collectionView.indexPathForItem(at: gesture.location(in: collectionView))  else {
@@ -142,6 +143,10 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource,U
     func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         let item = images.remove(at: sourceIndexPath.row)
         images.insert(item, at: destinationIndexPath.row)
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc  = DetailsViewController(nibName:DetailsViewController.identifier, bundle: .main)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }
