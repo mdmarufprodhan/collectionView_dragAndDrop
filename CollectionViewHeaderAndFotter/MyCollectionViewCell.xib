@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="gTV-IL-0wX" customClass="MyCollectionViewCell" customModule="CollectionViewHeaderAndFotter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="116"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="116"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jVt-Vj-NFn">
+                        <rect key="frame" x="8" y="14" width="80" height="88"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="cgj-UR-So1"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="XAW-Cu-GVC">
+                        <rect key="frame" x="113" y="36.666666666666671" width="50" height="42.666666666666671"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7Z-S9-t26">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkC-v2-KNS">
+                                <rect key="frame" x="0.0" y="22.333333333333336" width="50" height="20.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Nak-SE-T75"/>
+                        </constraints>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b97-Ia-4L3">
+                        <rect key="frame" x="265" y="43" width="75" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="Jo4-5O-7Sz"/>
+                            <constraint firstAttribute="height" constant="30" id="sST-WY-67C"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="pencil.tip.crop.circle.badge.plus" catalog="system"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="jVt-Vj-NFn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="0ka-b8-6Nw"/>
+                <constraint firstItem="jVt-Vj-NFn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="14" id="1Xo-mz-yyT"/>
+                <constraint firstAttribute="bottom" secondItem="jVt-Vj-NFn" secondAttribute="bottom" constant="14" id="5e0-cn-lEK"/>
+                <constraint firstItem="XAW-Cu-GVC" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="BwL-QY-eSH"/>
+                <constraint firstItem="b97-Ia-4L3" firstAttribute="leading" secondItem="XAW-Cu-GVC" secondAttribute="trailing" constant="102" id="NiW-La-xlp"/>
+                <constraint firstItem="b97-Ia-4L3" firstAttribute="centerY" secondItem="XAW-Cu-GVC" secondAttribute="centerY" id="cVr-Lv-jLu"/>
+                <constraint firstItem="XAW-Cu-GVC" firstAttribute="leading" secondItem="jVt-Vj-NFn" secondAttribute="trailing" constant="25" id="xlo-Bo-Hfx"/>
+            </constraints>
+            <size key="customSize" width="338" height="146"/>
+            <connections>
+                <outlet property="buttonView" destination="b97-Ia-4L3" id="aot-rz-Peg"/>
+                <outlet property="imageView" destination="jVt-Vj-NFn" id="8CW-rP-h8Y"/>
+                <outlet property="songSubTitleLabel" destination="XkC-v2-KNS" id="U7c-wH-z85"/>
+                <outlet property="songTitleLabel" destination="v7Z-S9-t26" id="V5b-kr-ppn"/>
+            </connections>
+            <point key="canvasLocation" x="276.3358778625954" y="18.30985915492958"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pencil.tip.crop.circle.badge.plus" catalog="system" width="128" height="114"/>
+    </resources>
+</document>
